@@ -1,0 +1,33 @@
+<!-----
+<div class="col">
+    <button routerLink= "/employee-create" class="w3-button w3-blue" >Create</button>
+   </div>
+
+<div class="container">
+    <div class="col">
+        <div class="row-sm-2" style="background-color:block">FirstName</div>&nbsp;
+        <div class= "row-sm-2" style="background-color: block">LastName</div>&nbsp;
+        <div class= "row-sm-2" style="background-color: block">Email</div>&nbsp;
+        <div class= "row-sm-2" style="background-color: block">PhoneNumber</div>&nbsp;
+        <div class= "row-sm-2" style="background-color: block">DateOfBirth</div>&nbsp;
+        <div class= "row-sm-2" style="background-color: block">DateOfJoining</div>&nbsp;
+        </div>
+    <div class="col" *ngFor = "let employee of employees" style="cursor: pointer">
+    <div class="row-sm-2" style="background-color:violet" >{{employee.firstName}}</div>
+    <div class="row-sm-2" style="background-color:violet" >{{employee.lastName}}</div>
+    <div class="row-sm-2" style="background-color:violet" >{{employee.email}}</div>
+    <div class="row-sm-2" style="background-color:violet" >{{employee.phoneNumber}}</div>
+    <div class="row-sm-2" style="background-color:violet" >{{employee.dateOfBirth}}</div>
+    <div class="row-sm-2" style="background-color:violet" >{{employee.dateOfJoining}}</div>
+  </div>
+--->
+<div class="card">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">FirstName</div>
+    </div>
+    <div class="row" *ngFor = "let employee of employees">
+      <div class="col-sm-2" >{{employee.firstName}}</div>
+    </div>
+  </div>
+</div>
